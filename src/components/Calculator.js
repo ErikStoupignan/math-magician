@@ -2,6 +2,7 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
 import '../styles/Calculator.css';
+// import calculate from '../logic/calculate';
 
 export default class Calculator extends React.Component {
   render() {
