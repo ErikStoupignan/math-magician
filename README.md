@@ -41,6 +41,10 @@ To get a local copy up and running it, follow these simple steps.
 - To install the libraries, please use the cmd: 
 > npm install
 
+### Usage
+
+For educational purpose only, use it as a guideline.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -86,11 +90,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-### Usage
-
-For educational purpose only, use it as a guideline.
-
 ## Authors
 
 👤 **Erik Stoupignan Sánchez Beltrán**
@@ -99,7 +98,7 @@ For educational purpose only, use it as a guideline.
 - Twitter: [@Erik_Stoupignan](https://twitter.com/Erik_Stoupignan)
 - LinkedIn: [Erik Stoupignan Sánchez Beltrán](https://www.linkedin.com/in/erik-s%C3%A1nchez-beltr%C3%A1n-393180238/)
 
-## Authors
+## License
 <a href="MIT.md">License MIT.md</a>
 
 ## 🤝 Contributing
