@@ -1,28 +1,68 @@
+/* eslint-disable class-methods-use-this */
 // import React from 'react';
 import '../styles/Calculator.css';
-import { useState } from 'react';
+import React from 'react';
 import calculate from '../logic/calculate';
 
-const Calculator = () => {
-  const [state, setState] = useState({ total: 'Welcome', next: null, operation: null });
-  const HandleClick = (event) => {
+class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: 'Welcome',
+      next: null,
+      operation: null,
+    };
+    this.keycontrol = this.keycontrol.bind(this);
+    this.HandleClick = this.HandleClick.bind(this);
+  }
+
+  componentDidMount() {
+    document.addEventListener('keydown', this.keycontrol);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.keycontrol);
+  }
+
+  HandleClick = (event) => {
     const buttonUse = event.target.textContent;
-    const result = calculate(state, buttonUse);
-    setState(result);
+    const result = calculate(this.state, buttonUse);
+    this.setState(result);
   };
 
-  const { total, next, operation } = state;
-  return (
-    <div className="Container-calculator">
-      <p className="screen">
-        {total}
-        {operation}
-        {next}
-      </p>
-      <Buttons handler={HandleClick} />
-    </div>
-  );
-};
+  keycontrol(event) {
+    let buttonPress = event.key;
+
+    const regex = /([0-9]|\+|-|\*|\/|Enter|Backspace|\.|%)/g;
+    if (regex.test(buttonPress) === false) return;
+
+    if (buttonPress === 'Enter') {
+      buttonPress = '=';
+    }
+    if (buttonPress === 'Backspace') {
+      buttonPress = 'AC';
+    }
+    if (buttonPress === '/') {
+      buttonPress = '÷';
+    }
+    const result = calculate(this.state, buttonPress);
+    this.setState(result);
+  }
+
+  render() {
+    const { total, next, operation } = this.state;
+    return (
+      <div className="Container-calculator">
+        <p className="screen">
+          {total}
+          {operation}
+          {next}
+        </p>
+        <Buttons handler={this.HandleClick} />
+      </div>
+    );
+  }
+}
 
 /* eslint-disable react/prop-types */
 const Buttons = (props) => {
