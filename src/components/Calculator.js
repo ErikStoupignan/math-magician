@@ -1,39 +1,28 @@
-import React from 'react';
+// import React from 'react';
 import '../styles/Calculator.css';
+import { useState } from 'react';
 import calculate from '../logic/calculate';
 
-export default class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: '',
-      next: null,
-      operation: null,
-    };
-    this.HandleClick = this.HandleClick.bind(this);
-  }
-
-  HandleClick(event) {
+const Calculator = () => {
+  const [state, setState] = useState({ total: 'Welcome', next: null, operation: null });
+  const HandleClick = (event) => {
     const buttonUse = event.target.textContent;
-    const result = calculate(this.state, buttonUse);
-    this.setState(result);
-  }
+    const result = calculate(state, buttonUse);
+    setState(result);
+  };
 
-  render() {
-    const { total, next, operation } = this.state;
-
-    return (
-      <div className="Container-calculator">
-        <p className="screen">
-          {total}
-          {operation}
-          {next}
-        </p>
-        <Buttons handler={this.HandleClick} />
-      </div>
-    );
-  }
-}
+  const { total, next, operation } = state;
+  return (
+    <div className="Container-calculator">
+      <p className="screen">
+        {total}
+        {operation}
+        {next}
+      </p>
+      <Buttons handler={HandleClick} />
+    </div>
+  );
+};
 
 /* eslint-disable react/prop-types */
 const Buttons = (props) => {
@@ -62,3 +51,5 @@ const Buttons = (props) => {
     </div>
   );
 };
+
+export default Calculator;
