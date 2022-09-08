@@ -4,7 +4,7 @@ import { useState } from 'react';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const [state, setState] = useState({ total: '', next: null, operation: null });
+  const [state, setState] = useState({ total: 'Welcome', next: null, operation: null });
   const HandleClick = (event) => {
     const buttonUse = event.target.textContent;
     const result = calculate(state, buttonUse);
