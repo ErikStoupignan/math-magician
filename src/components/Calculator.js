@@ -1,36 +1,21 @@
 /* eslint-disable class-methods-use-this */
 // import React from 'react';
 import '../styles/Calculator.css';
-import React from 'react';
+import { useEffect, useState } from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 'Welcome',
-      next: null,
-      operation: null,
-    };
-    this.keycontrol = this.keycontrol.bind(this);
-    this.HandleClick = this.HandleClick.bind(this);
-  }
+const Calculator = () => {
+  const [state, setState] = useState({ total: 'Welcome', next: null, operation: null });
 
-  componentDidMount() {
-    document.addEventListener('keydown', this.keycontrol);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('keydown', this.keycontrol);
-  }
-
-  HandleClick = (event) => {
+  // This function is if we want use the mouse on the screnn
+  const HandleClick = (event) => {
     const buttonUse = event.target.textContent;
-    const result = calculate(this.state, buttonUse);
-    this.setState(result);
+    const result = calculate(state, buttonUse);
+    setState(result);
   };
 
-  keycontrol(event) {
+  // This function filter the buttons from the keyboard
+  const keycontrol = (event) => {
     let buttonPress = event.key;
 
     const regex = /([0-9]|\+|-|\*|\/|Enter|Backspace|\.|%)/g;
@@ -45,24 +30,30 @@ class Calculator extends React.Component {
     if (buttonPress === '/') {
       buttonPress = '÷';
     }
-    const result = calculate(this.state, buttonPress);
-    this.setState(result);
-  }
+    const result = calculate(state, buttonPress);
+    setState(result);
+  };
 
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <div className="Container-calculator">
-        <p className="screen">
-          {total}
-          {operation}
-          {next}
-        </p>
-        <Buttons handler={this.HandleClick} />
-      </div>
-    );
-  }
-}
+  // This way is how we apply Eventlistener on the DOM using Hooks
+  useEffect(() => {
+    document.addEventListener('keydown', keycontrol);
+    return () => {
+      document.removeEventListener('keydown', keycontrol);
+    };
+  });
+
+  const { total, next, operation } = state;
+  return (
+    <div className="Container-calculator">
+      <p className="screen">
+        {total}
+        {operation}
+        {next}
+      </p>
+      <Buttons handler={HandleClick} />
+    </div>
+  );
+};
 
 /* eslint-disable react/prop-types */
 const Buttons = (props) => {
