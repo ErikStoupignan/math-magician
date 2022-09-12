@@ -1,8 +1,7 @@
 /* eslint-disable class-methods-use-this */
-// import React from 'react';
-import '../styles/Calculator.css';
+import './Calculator.css';
 import { useEffect, useState } from 'react';
-import calculate from '../logic/calculate';
+import calculate from '../../logic/calculate';
 
 const Calculator = () => {
   const [state, setState] = useState({ total: 'Welcome', next: null, operation: null });
