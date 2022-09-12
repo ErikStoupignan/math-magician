@@ -1,15 +1,46 @@
+/* eslint-disable class-methods-use-this */
 // import React from 'react';
 import '../styles/Calculator.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [state, setState] = useState({ total: 'Welcome', next: null, operation: null });
+
+  // This function is if we want use the mouse on the screnn
   const HandleClick = (event) => {
     const buttonUse = event.target.textContent;
     const result = calculate(state, buttonUse);
     setState(result);
   };
+
+  // This function filter the buttons from the keyboard
+  const keycontrol = (event) => {
+    let buttonPress = event.key;
+
+    const regex = /([0-9]|\+|-|\*|\/|Enter|Backspace|\.|%)/g;
+    if (regex.test(buttonPress) === false) return;
+
+    if (buttonPress === 'Enter') {
+      buttonPress = '=';
+    }
+    if (buttonPress === 'Backspace') {
+      buttonPress = 'AC';
+    }
+    if (buttonPress === '/') {
+      buttonPress = '÷';
+    }
+    const result = calculate(state, buttonPress);
+    setState(result);
+  };
+
+  // This way is how we apply Eventlistener on the DOM using Hooks
+  useEffect(() => {
+    document.addEventListener('keydown', keycontrol);
+    return () => {
+      document.removeEventListener('keydown', keycontrol);
+    };
+  });
 
   const { total, next, operation } = state;
   return (
