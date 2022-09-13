@@ -1,0 +1,16 @@
+.Home-Container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.Home-title {
+  text-align: left;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.Home-paragraph {
+  display: flex;
+  text-align: justify;
+}
