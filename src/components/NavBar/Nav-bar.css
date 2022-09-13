@@ -1,4 +1,50 @@
-.border {
-  border: 1px solid #000;
-  height: 100px;
+.NavBar-Container {
+  font-family: Monaco, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.NavBar-title {
+  font-size: 2rem;
+  margin: 5% 0 5% 10%;
+  cursor: pointer;
+}
+
+.NavBar-title:hover {
+  color: rgb(26, 167, 218);
+  text-shadow: 1px 1px rgb(18, 67, 192);
+}
+
+.Container-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  max-width: 300px;
+  margin: 0 2% 0 0;
+}
+
+.links {
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  width: 70px;
+}
+
+.links:hover {
+  color: rgb(246, 178, 3);
+  text-decoration: underline;
+}
+
+.links:active {
+  color: rgb(145, 104, 0);
+  transform: scale(0.9);
+  text-decoration: underline;
 }

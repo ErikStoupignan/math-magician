@@ -1,0 +1,29 @@
+.CalculatorPage-Container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.Container-title {
+  width: 49%;
+  height: auto;
+}
+
+.CalculatorPage-title {
+  text-align: left;
+}
+
+.CalculatorPage-AppContainer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+  min-width: 250px;
+  min-height: 250px;
+}
+
+.CalculatorPage-paragraph {
+  font-weight: 500;
+  text-align: center;
+  width: 49%;
+}

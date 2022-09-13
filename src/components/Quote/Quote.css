@@ -1,0 +1,21 @@
+.Quote-Container {
+  background-color: rgba(128, 128, 128, 0.066);
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.Home-title {
+  text-align: left;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.Quote-paragraph {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  height: 50vh;
+  margin: 20px;
+  font-weight: 600;
+}
