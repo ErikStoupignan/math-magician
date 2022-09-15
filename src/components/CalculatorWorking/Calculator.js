@@ -44,7 +44,7 @@ const Calculator = () => {
   const { total, next, operation } = state;
   return (
     <div className="Container-calculator">
-      <p className="screen">
+      <p data-testid="display" className="screen">
         {total}
         {operation}
         {next}

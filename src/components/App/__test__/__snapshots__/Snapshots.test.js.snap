@@ -1,0 +1,546 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot testing on CalculatorPage page 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="CalculatorPage-Container"
+      >
+        <div
+          class="Container-title"
+        >
+          <h2
+            class="CalculatorPage-title"
+          >
+            Let's do some Math!
+          </h2>
+          <p
+            class="CalculatorPage-paragraph"
+          >
+            Use your own keyboard!
+          </p>
+        </div>
+        <div
+          class="CalculatorPage-AppContainer"
+        >
+          <div
+            class="Container-calculator"
+          >
+            <p
+              class="screen"
+              data-testid="display"
+            >
+              Welcome
+            </p>
+            <div
+              class="Container-buttons"
+            >
+              <button
+                class="btn0"
+                type="button"
+              >
+                0
+              </button>
+              <button
+                class="btn2"
+                type="button"
+              >
+                2
+              </button>
+              <button
+                class="btn1"
+                type="button"
+              >
+                1
+              </button>
+              <button
+                class="btn3"
+                type="button"
+              >
+                3
+              </button>
+              <button
+                class="btn4"
+                type="button"
+              >
+                4
+              </button>
+              <button
+                class="btn5"
+                type="button"
+              >
+                5
+              </button>
+              <button
+                class="btn6"
+                type="button"
+              >
+                6
+              </button>
+              <button
+                class="btn7"
+                type="button"
+              >
+                7
+              </button>
+              <button
+                class="btn8"
+                type="button"
+              >
+                8
+              </button>
+              <button
+                class="btn9"
+                type="button"
+              >
+                9
+              </button>
+              <button
+                class="btn-add orange"
+                type="button"
+              >
+                +
+              </button>
+              <button
+                class="btn-less orange"
+                type="button"
+              >
+                -
+              </button>
+              <button
+                class="btn-division orange"
+                type="button"
+              >
+                ÷
+              </button>
+              <button
+                class="btn-multiplication orange"
+                type="button"
+              >
+                *
+              </button>
+              <button
+                class="btn-percentage"
+                type="button"
+              >
+                %
+              </button>
+              <button
+                class="btn-moremin"
+                type="button"
+              >
+                +/-
+              </button>
+              <button
+                class="btn.dot"
+                type="button"
+              >
+                .
+              </button>
+              <button
+                class="btn-equal orange"
+                type="button"
+              >
+                =
+              </button>
+              <button
+                class="btn-Ac"
+                type="button"
+              >
+                AC
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="CalculatorPage-Container"
+    >
+      <div
+        class="Container-title"
+      >
+        <h2
+          class="CalculatorPage-title"
+        >
+          Let's do some Math!
+        </h2>
+        <p
+          class="CalculatorPage-paragraph"
+        >
+          Use your own keyboard!
+        </p>
+      </div>
+      <div
+        class="CalculatorPage-AppContainer"
+      >
+        <div
+          class="Container-calculator"
+        >
+          <p
+            class="screen"
+            data-testid="display"
+          >
+            Welcome
+          </p>
+          <div
+            class="Container-buttons"
+          >
+            <button
+              class="btn0"
+              type="button"
+            >
+              0
+            </button>
+            <button
+              class="btn2"
+              type="button"
+            >
+              2
+            </button>
+            <button
+              class="btn1"
+              type="button"
+            >
+              1
+            </button>
+            <button
+              class="btn3"
+              type="button"
+            >
+              3
+            </button>
+            <button
+              class="btn4"
+              type="button"
+            >
+              4
+            </button>
+            <button
+              class="btn5"
+              type="button"
+            >
+              5
+            </button>
+            <button
+              class="btn6"
+              type="button"
+            >
+              6
+            </button>
+            <button
+              class="btn7"
+              type="button"
+            >
+              7
+            </button>
+            <button
+              class="btn8"
+              type="button"
+            >
+              8
+            </button>
+            <button
+              class="btn9"
+              type="button"
+            >
+              9
+            </button>
+            <button
+              class="btn-add orange"
+              type="button"
+            >
+              +
+            </button>
+            <button
+              class="btn-less orange"
+              type="button"
+            >
+              -
+            </button>
+            <button
+              class="btn-division orange"
+              type="button"
+            >
+              ÷
+            </button>
+            <button
+              class="btn-multiplication orange"
+              type="button"
+            >
+              *
+            </button>
+            <button
+              class="btn-percentage"
+              type="button"
+            >
+              %
+            </button>
+            <button
+              class="btn-moremin"
+              type="button"
+            >
+              +/-
+            </button>
+            <button
+              class="btn.dot"
+              type="button"
+            >
+              .
+            </button>
+            <button
+              class="btn-equal orange"
+              type="button"
+            >
+              =
+            </button>
+            <button
+              class="btn-Ac"
+              type="button"
+            >
+              AC
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Snapshot testing on Home page 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="Home-Container"
+      >
+        <div>
+          <h2
+            class="Home-title"
+          >
+            Welcome to our page
+          </h2>
+        </div>
+        <p
+          class="Home-paragraph"
+        >
+          Placeat quisquam debitis consequuntur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ducimus culpa nemo facere sequi earum voluptatibus! Necessitatibus temporibus numquam dignissimos architecto odit sed optio quod tenetur, fugiat unde tempora. Cupiditate!
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia asperiores harum aspernatur magni earum ullam culpa, pariatur officiis reprehenderit minus sit, porro nesciunt! Quidem, cupiditate.
+        </p>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="Home-Container"
+    >
+      <div>
+        <h2
+          class="Home-title"
+        >
+          Welcome to our page
+        </h2>
+      </div>
+      <p
+        class="Home-paragraph"
+      >
+        Placeat quisquam debitis consequuntur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum ducimus culpa nemo facere sequi earum voluptatibus! Necessitatibus temporibus numquam dignissimos architecto odit sed optio quod tenetur, fugiat unde tempora. Cupiditate!
+        <br />
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia asperiores harum aspernatur magni earum ullam culpa, pariatur officiis reprehenderit minus sit, porro nesciunt! Quidem, cupiditate.
+      </p>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Snapshot testing on Quote page 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="Quote-Container"
+      >
+        <p
+          class="Quote-paragraph"
+        >
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, voluptates distinctio veritatis aperiam rem, laboriosam voluptate error vero consequuntur nostrum nam, expedita sed doloremque voluptatum. Voluptatum molestiae distinctio modi! Deserunt! - Lorem
+        </p>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="Quote-Container"
+    >
+      <p
+        class="Quote-paragraph"
+      >
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, voluptates distinctio veritatis aperiam rem, laboriosam voluptate error vero consequuntur nostrum nam, expedita sed doloremque voluptatum. Voluptatum molestiae distinctio modi! Deserunt! - Lorem
+      </p>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
