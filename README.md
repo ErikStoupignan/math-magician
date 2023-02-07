@@ -11,7 +11,9 @@
 
 ## Live Demo
 
-<a href="#">Open my project</a> 
+<a href="https://polite-unicorn-62bbdc.netlify.app/">Open my project</a> 
+
+## Screenshots
 
 ## Getting Started
 
