@@ -15,6 +15,8 @@
 
 ## Screenshots
 
+![image](https://user-images.githubusercontent.com/106561762/217158072-bf4cb59e-64e0-4d63-a7d6-b1ab81d52a1c.png)
+
 ## Getting Started
 
 To get a local copy up and running it, follow these simple steps.
